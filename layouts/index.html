@@ -6,9 +6,11 @@
             <div class="sixteen columns">
                 <div class="li-main-article-list">
                     {{ range first 10 .Data.Pages }}
-                        <div class="li-article">
-                            {{ .Render "summary"}}
-                        </div>
+                        {{ if ne .Type "page" }}
+                            <div class="li-article">
+                               {{ .Render "summary"}}
+                            </div>
+                        {{ end }}
                     {{ end }}
                 </div>
             </div>

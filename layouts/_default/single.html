@@ -27,7 +27,9 @@
                             {{ end }}
                         </span>
                         {{ if or $categories $tags }} - {{ end }}
-                        <time class="li-article-date">{{ .Date.Format "Monday, January 2, 2006" }}</time>
+                        {{ if ne .Type "page" }}
+			    <time class="li-article-date">{{ .Date.Format "Monday, January 2, 2006" }}</time>
+                        {{ end }}
                     </header>
                     <section>
                         {{ .Content }}
@@ -36,8 +38,7 @@
             </div>
         </div>
 
-        {{ partial "author.html" .}}
-
+{{ if ne .Type "page" }}
         <div class="row li-pagination">
             <div class="eight columns">
                 <div class="li-pagination-previous">
@@ -52,14 +53,17 @@
             <div class="eight columns">
                 <div class="li-pagination-next">
                     {{with .Next}}
-                        Older article<br />
-                        <a href="{{.Permalink}}"> {{.Title}}</a>
+                        {{ if ne .Type "page" }}
+                            Older article<br />
+                            <a href="{{.Permalink}}"> {{.Title}}</a>
+                        {{ end }}
                     {{else}}
                         &nbsp;
                     {{end}}
                 </div>
             </div>
         </div>
+{{ end }}
     </div>
 
 {{ partial "footer.html" . }}
