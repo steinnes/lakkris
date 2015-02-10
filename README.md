@@ -2,6 +2,8 @@
 
 Lakkrís is a modified clone of Liquorice by [Markus Eliasson](https://github.com/eliasson) which is a small black and white theme for [Hugo](https://github.com/spf13/hugo) (a fast and modern static website engine).
 
+Lakkrís is the icelandic word for liquorice.
+
 
 ### Dependencies
 
