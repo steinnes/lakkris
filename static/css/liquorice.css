@@ -428,3 +428,31 @@ or wrap each row of columns in a <div class="row"> */
     width: 0;
     height: 0;
 }
+
+p > a {
+	display: inline-block;
+	text-decoration: none;
+	color #000;
+}
+
+p > a:hover {
+	color #000;
+}
+
+p > a:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+p > a:hover:after {
+    width: 90%;
+    margin-left: 5%;
+}
+
