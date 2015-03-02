@@ -26,7 +26,8 @@
 body {
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
     color: #484644;
-    line-height: 1.55;
+    line-height: 1.75;
+    font-size: 20px;
 }
 
 a,
@@ -41,6 +42,11 @@ a:visited {
 h1,h2,h3,h4,h5,h6 {
     color: #202020;
     font-weight: lighter;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 60px;
 }
 
 /** Screen furniture ********************************************************/
@@ -99,7 +105,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .li-article pre {
-    padding: 8px;
+    padding: 2px;
+    margin: 0px;
 }
 
 ul.li-article-list {
@@ -142,6 +149,7 @@ ul.li-article-list {
 }
 
 .li-pagination-next {
+    text-align: right;
     float: right;
 }
 
@@ -467,6 +475,8 @@ code {
 }
 
 .highlight {
+	padding: 10px;
+	font-size: 14px;
 	border: 1px solid #ddd; 
 	border-radius: 4px;
 	color: #ddd;
