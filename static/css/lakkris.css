@@ -105,12 +105,8 @@ h1 {
 }
 
 .li-article pre {
-    font-size: 0.8em;
-    padding: 0px 8px 0px 8px;
+    padding: 2px;
     margin: 0px;
-    background-color: #fafafa;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 ul.li-article-list {
@@ -480,8 +476,28 @@ code {
 
 .highlight {
 	padding: 10px;
-	font-size: 14px;
+	font-size: 0.67em;
 	border: 1px solid #ddd; 
-	border-radius: 4px;
+	border-radius: 6px;
 	color: #ddd;
+}
+
+.highlight pre::-webkit-scrollbar {
+	background-color: black;
+	width: 12px;
+	height: 10px;
+}
+
+.highlight pre::-webkit-scrollbar-track {
+	background-color: #777;
+	border-radius: 6px;
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+	background-color: #555;
+	border-radius: 6px;
+}
+
+figure img {
+	width: 95%;
 }
