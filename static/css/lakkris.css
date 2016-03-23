@@ -498,6 +498,10 @@ code {
 	border-radius: 6px;
 }
 
+figure {
+	text-align: center;
+}
+
 figure img {
-	width: 95%;
+	max-width: 665px;
 }
