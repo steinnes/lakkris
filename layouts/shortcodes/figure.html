@@ -1,6 +1,7 @@
 <figure>
-    <img src="{{ .Get src }}"  />
+    {{ with .Get "title"}}<h4>{{.}}</h4>{{ end }}
+    <img src="{{ .Get "src" }}"  />
     <figcaption>
-        <h4>{{ .Get caption }}</h4>
+        <h5>{{ .Get "caption" }}</h5>
     </figcaption>
 </figure>

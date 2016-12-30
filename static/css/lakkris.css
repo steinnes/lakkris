@@ -505,3 +505,7 @@ figure {
 figure img {
 	max-width: 665px;
 }
+
+figure figcaption h5 {
+	margin-top: 5px;
+}
