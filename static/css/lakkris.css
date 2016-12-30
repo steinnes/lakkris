@@ -443,11 +443,11 @@ or wrap each row of columns in a <div class="row"> */
 p > a {
 	display: inline-block;
 	text-decoration: none;
-	color #000;
+	color: #000;
 }
 
 p > a:hover {
-	color #000;
+	color: #000;
 }
 
 p > a:after {
@@ -456,15 +456,17 @@ p > a:after {
 	height: 2px;
 	width: 0%;
 	background-color: #000;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-ms-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	margin-top: -4px;
 }
 
 p > a:hover:after {
-	width: 90%;
-	margin-left: 5%;
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: -4px;
 }
 
 code {
